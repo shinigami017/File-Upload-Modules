@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Upload Module 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>File Upload</h1>
+        <br>
+        <hr><br>
+        <!--  SINGLE FILE -->
+        <h2>Single File Upload</h2>
+        <form action="/uploadfile" enctype="multipart/form-data" method="POST">
+            <input type="file" name="myFile" />
+            <input type="submit" value="Upload a file" />
+        </form>
+        <br>
+        <hr><br>
+
+        <!-- MULTIPLE FILES -->
+        <h2>Multiple Files Upload</h2>
+        <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+            Select files: <input type="file" name="myFiles" multiple>
+            <input type="submit" value="Upload your files" />
+        </form>
+        <br>
+        <hr><br>
+
+    </div>
+</body>
+
+</html>
